@@ -9,7 +9,7 @@ public class InsertMain { // 노래 생성
     public static void main(String[] args) {
         // 오늘은 노래를 생성 해볼까?
         // 박효신 노래로!
-        // 대장님 최신곡으로 부탁드립니다. 푸쉬하려고 시도.
+        // 대장님 최신곡으로 부탁드립니다. 푸쉬하려고 시도합니다.
         MusicDao dao = new MusicDao();
         Music bean = new Music();
 
