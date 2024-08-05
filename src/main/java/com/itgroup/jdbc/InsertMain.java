@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class InsertMain { // 노래 생성
     public static void main(String[] args) {
+        // 오늘은 노래를 생성 해볼까?
         MusicDao dao = new MusicDao();
         Music bean = new Music();
 
