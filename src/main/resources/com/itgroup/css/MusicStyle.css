@@ -1,0 +1,135 @@
+/* styles.css */
+.root {
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-background-color: linear-gradient(to bottom, #B1AFFF, #BBE9FF, #FFFED3, #FFE9D0); /* 새로운 색상 조합 *
+    -fx-padding: 20;
+    -fx-font-size: 12px; /* 전체 글자 크기 줄이기 */
+}
+
+.button {
+    -fx-background-color: #00C73C; /* 멜론의 메인 녹색 */
+    -fx-text-fill: white;
+    -fx-padding: 8 16; /* 패딩 줄이기 */
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 199, 60, 0.8), 5, 0, 0, 1); /* 버튼에 살짝 그림자 효과 */
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #00A32A; /* 조금 더 진한 녹색 */
+}
+
+.label {
+    -fx-font-size: 12px; /* 글자 크기 줄이기 */
+    -fx-text-fill: #333; /* 진한 회색 */
+    -fx-font-weight: 600;
+}
+
+.combo-box {
+    -fx-background-color: white; /* 밝은 배경 */
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5;
+    -fx-padding: 6 10; /* 패딩 줄이기 */
+    -fx-font-size: 12px; /* 글자 크기 줄이기 */
+    -fx-text-fill: #333; /* 진한 회색 */
+}
+
+.table-view {
+    -fx-background-color: white; /* 밝은 배경 */
+    -fx-border-color: #ccc;
+    -fx-border-radius: 10;
+    -fx-padding: 10;
+    -fx-font-size: 12px; /* 글자 크기 줄이기 */
+    -fx-text-fill: #333; /* 진한 회색 */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #B1AFFF, #BBE9FF, #FFFED3, #FFE9D0); /* 멜론의 메인 녹색 */
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: white; /* 밝은 배경 */
+    -fx-border-color: #B1AFFF; /* 밝은 회색 */
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-view .table-row-cell:filled:selected, .table-view .table-row-cell:filled:hover {
+    -fx-background-color: #BBE9FF; /* 클릭시 색깔 변경 */
+}
+
+.pagination {
+    -fx-background-color: #FFE9D0; /* 밝은 배경 */
+    -fx-border-color: #FFE9D0;
+    -fx-border-radius: 10;
+    -fx-padding: 0.1;
+    -fx-font-size: 12px; /* 글자 크기 줄이기 */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 1); /* 살짝 그림자 효과 */
+}
+
+.image-view {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+    -fx-background-radius: 10;
+    -fx-padding: 5;
+    -fx-border-radius: 10;
+}
+
+.context-menu {
+    -fx-background-color: white; /* 밝은 배경 */
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 1); /* 살짝 그림자 효과 */
+}
+
+.menu-item {
+    -fx-font-size: 12px; /* 글자 크기 줄이기 */
+    -fx-padding: 8 16; /* 패딩 줄이기 */
+    -fx-text-fill: #333; /* 진한 회색 */
+}
+
+.menu-item:hover {
+    -fx-background-color: #f0f0f0; /* 살짝 어두운 배경 */
+}
+
+.vbox {
+    -fx-background-color: white; /* 밝은 배경 */
+    -fx-border-color: #ccc;
+    -fx-border-radius: 10;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 1); /* 살짝 그림자 효과 */
+}
+
+/* Additional Styles */
+.table-column {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #00C73C; /* 진한 회색 */
+    -fx-font-weight: bold;
+
+}
+
+.table-view .table-row-cell {
+    -fx-text-fill: #333; /* 진한 회색 */
+}
+
+.table-view .table-row-cell:filled:selected {
+    -fx-background-color: #f0f0f0; /* 살짝 어두운 배경 */
+}
+
+.header {
+    -fx-background-color: #00C73C; /* 멜론의 메인 녹색 */
+    -fx-padding: 10;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 199, 60, 0.8), 5, 0, 0, 1); /* 살짝 그림자 효과 */
+}

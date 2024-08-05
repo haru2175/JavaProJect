@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane prefHeight="540.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itgroup.Controller.MusicUpdateController">
+    <children>
+        <!-- 변수 정의 -->
+        <fx:define>
+            <Double fx:id="xLabelPosition" fx:value="56.0"/> <!-- 라벨의 x 좌표 위치 -->
+            <Double fx:id="xTextFieldPosition" fx:value="135.0"/> <!-- 입력 상자의 x 좌표 위치 -->
+            <Double fx:id="textFiedWidth" fx:value="200.0"/> <!-- 입력 상자의 너비 -->
+        </fx:define>
+        <Label layoutX="$xLabelPosition" layoutY="17.0" text="음원 수정 화면"><!-- 변수 참조할때는 $ 붙여야한다. -->
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <!-- Product 클래스를 토대로 fxml 파일 내에서 다음과 같이 camel case 표기법으로 작성합니다. -->
+        <TextField fx:id ="fxmlPnum" layoutX="100" layoutY="30.0" prefWidth="$textFiedWidth" text=""/>
+
+        <Label layoutX="$xLabelPosition" layoutY="60.0" text="노래 제목"><!-- 변수 참조할때는 $ 붙여야한다. -->
+            <font>
+                <Font size="12.0" fx:id="myFont01" /> <!-- fx:id="myFont01"로 설정해두면 다른 Label에 font = "myFont01"로하면 모두 글자가 크기가 똑같다. -->
+            </font>
+        </Label>
+        <TextField fx:id="fxmlName" layoutX="$xTextFieldPosition" layoutY="60.0" prefWidth="$textFiedWidth" text="" />
+
+        <Label font="$myFont01" layoutX="$xLabelPosition" layoutY="90.0" text="가수" /><!-- 변수 참조할때는 $ 붙여야한다. -->
+        <TextField fx:id="fxmlArtist" layoutX="$xTextFieldPosition" layoutY="90.0" prefWidth="$textFiedWidth" text="" />
+
+        <Label font="$myFont01" layoutX="$xLabelPosition" layoutY="120.0" text="앨범" /><!-- 변수 참조할때는 $ 붙여야한다. -->
+        <DatePicker fx:id="fxmlAlbum" layoutX="$xTextFieldPosition" layoutY="120.0" prefWidth="$textFiedWidth" promptText="날짜를 선택해 주세요." />
+
+        <Label font="$myFont01" layoutX="$xLabelPosition" layoutY="150.0" text="재생 시간" /><!-- 변수 참조할때는 $ 붙여야한다. -->
+        <TextField fx:id="fxmlStime" layoutX="$xTextFieldPosition" layoutY="150.0" prefWidth="$textFiedWidth" text="" />
+
+        <Label font="$myFont01" layoutX="$xLabelPosition" layoutY="180.0" text="이미지" /><!-- 변수 참조할때는 $ 붙여야한다. -->
+        <TextField fx:id="fxmlImage" layoutX="$xTextFieldPosition" layoutY="180.0" prefWidth="$textFiedWidth" text="" />
+
+        <Label font="$myFont01" layoutX="$xLabelPosition" layoutY="210.0" text="장르" />
+        <ComboBox fx:id="fxmlBallad" layoutX="$xTextFieldPosition" layoutY="210.0" prefWidth="$textFiedWidth" >
+            <items>
+                <!-- factory 속성은 자바의 static 메소드를 객체를 생성하고자 할때 사용합니다. -->
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="--전체 목록을 선택해 주세요.--" />
+                    <String fx:value="발라드" />
+                    <String fx:value="팝송" />
+                    <String fx:value="AI" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+
+    </children>
+    <Button layoutX="$xLabelPosition" prefWidth="285" layoutY="418.0" mnemonicParsing="false" text="수정하기" onAction="#onMusicUpdate">
+        <font>
+            <Font name="System Bold" size="20.0"/>
+        </font>
+    </Button>
+</AnchorPane>
